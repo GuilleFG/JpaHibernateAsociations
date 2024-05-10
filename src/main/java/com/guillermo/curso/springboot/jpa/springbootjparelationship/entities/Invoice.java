@@ -50,4 +50,14 @@ public class Invoice {
     public void setTotal(Long total) {
         this.total = total;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "id=" + id +
+                ", description='" + description + '\'' +
+                ", total=" + total +
+                ", client=" + client +
+                '}';
+    }
 }
